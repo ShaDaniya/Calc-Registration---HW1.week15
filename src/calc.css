@@ -1,0 +1,11 @@
+.calculator__title {
+    padding-top: 30px;
+}
+
+.container__item {
+    border: 1px solid black;
+}
+
+.container {
+    padding: 50px;
+}

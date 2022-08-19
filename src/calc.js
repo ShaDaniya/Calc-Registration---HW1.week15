@@ -53,12 +53,17 @@ function calcSum() {
     }
 
     const button = document.getElementById('division');
+    
+    //такой вариант с options сделала, чтобы уведомление о том, что не заполнен делитель, появлялось только один раз
+    const options = {
+        "once": true
+    }
 
     //обработчик, выдающий уведомление, если не заполнено делимое
     button.addEventListener('click', checkEmptyString);
 
     //обработчик, выдающий уведомление, если не заполнен делитель
-    button.addEventListener('click', checkDivider);
+    button.addEventListener('click', checkDivider, options);
 
     //обработчик, выдающий уведомление при делении на 0
     button.addEventListener('click', checkZero);

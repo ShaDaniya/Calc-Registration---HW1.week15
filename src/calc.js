@@ -30,7 +30,7 @@ function calcSum() {
     }
 
     function checkZero() {
-        let divisionResult = document.getElementById('divider').value;
+        const divisionResult = document.getElementById('divider').value;
         if (divisionResult == '0') {
             alert('Котик, а на ноль же делить нельзя!');
             //Добавила ниже убрать не показывать обработчик после одного срабатывания
@@ -39,20 +39,20 @@ function calcSum() {
     }
 
     function checkEmptyString() {
-        let emptyString = document.getElementById('dividend').value;
+        const emptyString = document.getElementById('dividend').value;
         if (emptyString == '') {
             alert('Котик, ты что-то пропустил(');
         }
     }
 
     function checkDivider() {
-        let emptyDivider = document.getElementById('divider').value;
+        const emptyDivider = document.getElementById('divider').value;
         if (emptyDivider == '') {
             alert('Кисок нет??? Хотя бы одной, а то получим бесконечность');
         }
     }
 
-    let button = document.getElementById('division');
+    const button = document.getElementById('division');
 
     //обработчик, выдающий уведомление, если не заполнено делимое
     button.addEventListener('click', checkEmptyString);
